@@ -1,4 +1,4 @@
-## Shift - A pivot to the application generation paradigm.
+<!-- ## Shift - A pivot to the application generation paradigm.
 
 The concept of Shift is to revolutionize the application setup and development lifecycle by providing a robust mix of pre-configured assets and tool sets in an easy to use package.
 
@@ -88,7 +88,7 @@ end
 
 **Update the README.md to be specific to the project.**
 
-That's it. The application is ready for use and extension.  That took you what, five minutes?  You're welcome.
+That's it. The application is ready for use and extension.  That took you what, five minutes?  You're welcome. -->
 
 #### Environment Variables & Template File
 
