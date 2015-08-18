@@ -3,14 +3,25 @@ $off-white: #f1f1f1;
 $gray: #ccc;
 $light-blue: #3598dc;
 $light-green: #2ab292;
-$light-gray: #999;
+$lighter-gray: #f9f9f9;
+$light-gray: #f4f4f4;
 $medium-gray: #666;
 $dark-gray: #333;
-$dark-blue: #22313F;
+$dark-blue: #043c51;
 $green: #3FC380;
 $red: #D24D57;
 $yellow: #f1c205;
 $orange: #f08a24;
+
+$propo-blue: #63bbff;
+$baby-blue: #bce8f8;
+$cloud-blue: #e9eff2;
+$emerald: #7bd3b7;
+$gold: #f9b517;
+$light-gold: #ebca70;
+$purple: #866cb0;
+$salmon: #f67b55;
+$light-salmon: #f4a187;
 
 // Backgrounds
 $body-background-color: white;
@@ -24,10 +35,10 @@ $base-line-height: 24px;
 $ms-base: $base-font-size;
 $ms-small-base: $base-small-font-size;
 
-$ms-ratio: $augmented-fourth;
+$ms-ratio: $major-third;
 $ms-small-ratio: $major-third;
 
-$ms-up-3: ms(4);
+$ms-up-3: 76.294px;
 $ms-up-2: ms(3);
 $ms-up-1: ms(2);
 $ms-up:   ms(1);
@@ -41,23 +52,23 @@ $ms-small-up:   ms(1, $ms-base, $ms-small-ratio);
 $ms-0: $ms-base;
 $ms-small-down:  ms(-1);
 
-$font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$font-family: "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 $font-weight: normal;
 $font-color: $medium-gray;
-$header-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$header-font-family: "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 $header-font-weight: normal;
 $header-font-color: $dark-gray;
 
 
 // Buttons
-$button-font-size: rem-calc(14);
+$button-font-size: rem-calc(12.8);
 $button-font-weight: $font-weight;
-$button-background-color: $light-green;
-$button-background-color-hover: scale_color($button-background-color, $lightness: -20%);
-$button-border: none;
-$button-border-color: none;
+$button-background-color: transparent;
+$button-background-color-hover: $purple;
+$button-border: 1px solid;
+$button-border-color: $purple;
 $button-border-color-hover: none;
-$button-color: white;
+$button-color: $purple;
 $button-color-hover: white;
 
 
