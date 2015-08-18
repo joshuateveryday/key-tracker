@@ -131,7 +131,7 @@ $icon-color-hover: scale_color($icon-color, $lightness: -20%);
 
 // Navigations
 $use-sidebar: false;
-$use-thin-sidebar: true;
+$use-thin-sidebar: false;
 
 $sidebar-width: rem-calc(260);
 $sidebar-background-color: $dark-blue;
@@ -146,7 +146,7 @@ $thin-sidebar-color: white;
 $thin-sidebar-color-hover: scale_color($thin-sidebar-color, $lightness: -20%);
 $thin-sidebar-color-active: scale_color($thin-sidebar-color, $lightness: -30%);
 
-$topbar-background-color: $dark-blue;
+$topbar-background-color: white;
 $topbar-color: white;
 $topbar-color-hover: scale_color($topbar-color, $lightness: -20%);
 $topbar-color-active: scale_color($thin-sidebar-color, $lightness: -30%);

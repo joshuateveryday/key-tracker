@@ -1,14 +1,11 @@
 %nav.top-bar-container
-  Interface
-  .top-bar
-    .hover-menu
-      %span
-        = current_user.email
-        %i.fa.fa-caret-down
-      %ul.sub-navigation
-        %li
-          = link_to 'Home' , root_path
-        %li
-          = link_to 'Logout', destroy_user_session_path, :method=>'delete'
-    %a.right-off-canvas-toggle
-      %i.fa.fa-bars
+  .logo
+    = image_tag 'propo-logo.png'
+  .top-bar-links
+    %ul
+      %li= link_to 'HOW IT WORKS', '#'
+      %li= link_to 'FEATURES', '#'
+      %li= link_to 'STORIES', '#'
+      %li= link_to 'MEDIA', '#'
+      %li= link_to 'LOGIN', '#', class: 'button login-button'
+      %li= link_to 'SIGN UP', '#', class: 'button purple-filled-button'

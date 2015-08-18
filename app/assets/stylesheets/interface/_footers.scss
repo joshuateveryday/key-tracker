@@ -1,79 +1,47 @@
 footer {
-  padding: 0 1em;
-  background-color: $dark-gray;
+  padding: 4.5em 1em;
+  background-color: $emerald;
 
-  .site-map {
-    @include container(100em);
-    padding: 2.25em 0 adjust-leading(2.25em) 0;
-    border-bottom: 1px solid $light-gray;
-
-    ul {
-      float: left;
-    }
-
-    li {
-      display: inline-block;
-      margin-right: 3em;
-
-      &:nth-of-type(5) a {
-        color: $dark-blue;
-      }
-    }
-
-    .contact {
-      float: right;
-      color: white;
-
-      a {
-        font-weight: 400;
-      }
-    }
+  .footer-container {
+    @include container(107em);
   }
 
-  .copyright {
-    @include container(100em);
-    padding: 1.5em 0;
+  .propo-info {
+    @include span(4);
 
     p {
-      margin: 0;
+      @include adjust-font-size-to(12px);
       color: white;
     }
   }
 
-  @media only screen and (max-width: 767px) {
-    .site-map {
-      li {
-        margin-bottom: 1.5em;
-        display: block;
-        text-align: left;
+  .footer-links {
+    @include span(5);
+    text-align: right;
+
+    div {
+      margin-left: 4.5em;
+      display: inline-block;
+      vertical-align: top;
+      text-align: left;
+
+      h5 {
+        color: white;
       }
 
-      .contact {
-        text-align: left;
+      a {
+        @include adjust-font-size-to(12px);
+        color: $light-gray;
+        font-weight: 400;
+
+        &:hover {
+          color: scale_color($light-gray, $lightness: -10%);
+        }
       }
     }
   }
 
-  @media only screen and (min-width: 768px) and (max-width: 800px) {
-    .site-map {
-      li {
-        margin: 0 0.75em;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1024px) {
-    .site-map {
-      text-align: center;
-
-      ul {
-        float: none;
-        margin-bottom: 1.5em;
-      }
-
-      .contact {
-        float: none;
-      }
-    }
+  .signup-form {
+    @include span(3 last);
   }
 }

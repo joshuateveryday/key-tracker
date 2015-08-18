@@ -1,23 +1,35 @@
 %footer
-  .site-map
-    %ul
-      %li
-        %a
-          Link 1
-      %li
-        %a
-          Link 2
-      %li
-        %a
-          Link 3
-      %li
-        %a
-          Link 4
-      %li
-        %a
-          Link 5
-    .contact
-      %span For questions, call:
-      %a.phone{:href => "tel:5551234567"} (555)-123-4567
-  .copyright
-    %p EndoBarrier is an investigational device and is limited by United States law to investigational use. EndoBarrier is a registered trademark of GI Dynamics, Inc. © 2015 GI Dynamics, Inc. All rights reserved.
+  .footer-container
+    .propo-info
+      = image_tag 'propo-temp.png'
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+
+    .footer-links
+      .company
+        %ul
+          %li
+            %h5 COMPANY
+          %li= link_to 'Contact Us', '#'
+          %li= link_to 'Privacy Policy', '#'
+          %li= link_to 'Terms', '#'
+      .account
+        %ul
+          %li
+            %h5 ACCOUNT
+          %li= link_to 'Login', '#'
+          %li= link_to 'Sign Up', '#'
+      .get-social
+        %ul
+          %li
+            %h5 GET SOCIAL
+          %li= link_to 'Facebook', '#'
+          %li= link_to 'Twitter', '#'
+          %li= link_to 'Instagram', '#'
+          %li= link_to 'LinkedIn', '#'
+          %li= link_to 'Pinterest', '#'
+          %li= link_to 'Google+', '#'
+
+    .signup-form
+      %form
+        %label SIGN UP FOR UPDATES
+        %input{type: 'text', placeholder: 'ENTER EMAIL ADDRESS'}
