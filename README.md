@@ -90,28 +90,19 @@ end
 
 That's it. The application is ready for use and extension.  That took you what, five minutes?  You're welcome. -->
 
+# Key Tracker - Keeps track of special keys
+
 #### Environment Variables & Template File
 
 ```ruby
-# Unicorn Configuration Variables
-MAX_WORKER_PROCESSES # Applies hard limiting to the amount of worker threads allowed to be spawned by Unicorn.
-MIN_WORKER_MEMORY # Designates the lower bound of when a worker thread is eligible for reaping.
-MAX_WORKER_MEMORY # Designates the upper bound of when a worker thread is eligible for reaping.
+# Database config
+DATABASE_HOST
+DATABASE_PORT
+DATABASE_USER
+DATABASE_PASSWORD
+DATABASE_NAME
 
-# Redis
-REDIS_URI # Designates the URI at which the Redis server is operating
 
-# Database
-DATABASE_NAME # The base name of the database.  This will have the environment appended to the end.
-DATABASE_HOST # The address of the location PostgreSQL is hosted.
-DATABASE_PORT # The port on which PostgreSQL is operating.
-DATABASE_USER # The username the application will use to connect to the database.
-DATABASE_PASSWORD # The password the application will use to connect to the database
-
-# Email - By default Mandrill is used
-MANDRILL_API_KEY # The API key generated from Mandrill.
-MANDRILL_EMAIL_TEMPLATE # The name of the template in Mandrill used to send emails.
-EMAIL_FROM_NAME # The name that appears as "from".
-EMAIL_FROM_ADDRESS # The email address from which emails will be sent and replied to.
-EMAIL_BCC_ADDRESS # A single, or array of email addresses which will be blind copied on all transactions.
+# Email configuration
+MANDRILL_API_KEY
 ```
