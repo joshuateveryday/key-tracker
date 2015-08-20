@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
-  root 'home#index'
 
-  mount API::Base => '/api'
+  root to: 'projects#index'
+
+  resources :projects
 
 end

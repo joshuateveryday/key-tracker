@@ -1,0 +1,51 @@
+.index-container, .new-container, .edit-container, .show-container
+  @include container(1200px)
+  margin: auto
+  padding-top: 2em
+
+
+.form-container
+  @include container(700px)
+  margin: auto
+  padding: 2em 0
+
+
+.five-columns
+  @include span(5)
+  box-sizing: border-box
+
+.two-columns
+  @include span(2 last)
+
+  text-align: right
+  box-sizing: border-box
+
+  a
+    top: 50%
+    right: 0
+    position: absolute
+    transform: translateY(-10%)
+
+.four-columns
+  @include span(4)
+
+  a
+    top: 50%
+    right: 0
+    position: absolute
+    transform: translateY(-20%)
+
+  &.last
+    @include span(4 last)
+
+.twelve-columns
+  @include span(12)
+  position: relative
+  box-sizing: border-box
+
+  input[type=submit]
+    float: right
+
+
+@import 'projects/projects'
+@import 'authentication/authentication'

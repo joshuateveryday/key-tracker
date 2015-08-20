@@ -1,0 +1,12 @@
+= simple_form_for @project do |f|
+  .twelve-columns
+    = f.input :name
+
+  = f.simple_fields_for :keys do |sf|
+    = render 'key_fields', f: sf
+
+  .twelve-columns
+    = link_to_add_association 'Add key', f, :keys, class: 'button'
+
+  .twelve-columns{style: 'padding: 1em 0'}
+    = f.submit 'Add Project'

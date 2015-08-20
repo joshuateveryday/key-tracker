@@ -9,6 +9,8 @@
   box-shadow: $form-box-shadow;
   border-radius: $round-edges;
   outline: none;
+  width: 100%;
+  box-sizing: border-box;
 
   &:hover {
     border: 1px solid $form-border-color-hover;

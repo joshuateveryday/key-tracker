@@ -1,0 +1,12 @@
+%li
+  = link_to 'destroy', project_path(project), method: :delete, class: 'button'
+  = link_to 'edit', edit_project_path(project), class: 'button'
+
+  %h4= project.name
+  %table
+    %colgroup
+      %col{width: '350px'}
+      %col{width: 'auto'}
+    - unless project.blank? or !project.keys.any?
+      - project.keys.each do |key|
+        = render 'key', key: key

@@ -3,9 +3,7 @@
     = image_tag 'propo-logo.png'
   .top-bar-links
     %ul
-      %li= link_to 'HOW IT WORKS', '#'
-      %li= link_to 'FEATURES', '#'
-      %li= link_to 'STORIES', '#'
-      %li= link_to 'MEDIA', '#'
-      %li= link_to 'LOGIN', '#', class: 'button login-button'
-      %li= link_to 'SIGN UP', '#', class: 'button purple-filled-button'
+      - if user_signed_in?
+        %li= link_to 'Sign out', destroy_user_session_path, method: :delete, class: 'button'
+      - else
+        %li= link_to 'Sign in', new_user_session_path, class: 'button'

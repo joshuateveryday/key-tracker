@@ -1,0 +1,14 @@
+
+
+.index-container.projects
+  .action-bar
+    %h2 Projects
+
+    .actions
+      = link_to 'Add Project', new_project_path
+
+  %ul#projects
+    - @projects.each do |project|
+      = render "project", project: project
+
+  = paginate @projects

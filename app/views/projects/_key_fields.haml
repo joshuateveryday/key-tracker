@@ -1,0 +1,9 @@
+.twelve-columns.nested-fields
+  .four-columns
+    = f.input :name, label: "Key name"
+
+  .four-columns
+    = f.input :value
+
+  .four-columns
+    = link_to_remove_association 'remove', f, class: 'button'

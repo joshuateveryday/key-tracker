@@ -93,6 +93,7 @@ GEM
     childprocess (0.5.5)
       ffi (~> 1.0, >= 1.0.11)
     chunky_png (1.3.3)
+    cocoon (1.2.6)
     coderay (1.1.0)
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
@@ -465,6 +466,7 @@ DEPENDENCIES
   carrierwave
   carrierwave_backgrounder
   cherry
+  cocoon
   coffee-rails
   compass-rails
   database_cleaner
